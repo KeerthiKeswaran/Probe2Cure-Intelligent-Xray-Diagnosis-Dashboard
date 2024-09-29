@@ -63,7 +63,8 @@ const Dashboard = () => {
     formData.append("file", selectedFile);
 
     try {
-      const response = await axios.post("http://localhost:8000/upload", formData, {
+      const response = await axios.post("probe2cure-backend.just-sheila.internal:8000/upload", formData, {
+        method : 'POST',
         headers: { "Content-Type": "multipart/form-data" },
       });
 
@@ -84,11 +85,12 @@ const Dashboard = () => {
       });
 
       try {
-        const response = await axios.post("http://localhost:8000/suggestion",
+        const response = await axios.post("probe2cure-backend.just-sheila.internal:8000/suggestion",
           {
             diagnose: latestDiagnosis,
             accuracy: String(latestAccuracy)
           }, {
+          method: 'POST',
           headers: { "Content-Type": "application/json" },
         });
         const text = preprocessText(response.data.results);
