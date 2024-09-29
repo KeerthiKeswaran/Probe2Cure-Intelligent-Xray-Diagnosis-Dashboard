@@ -1,0 +1,379 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2B2D42;
+    /* Darker background resembling ChatGPT elephant color */
+    color: #E0E0E0;
+    /* Light gray for text */
+}
+
+div.logoMobile {
+    display: none !important;
+    /* Use !important as a last resort */
+}
+
+.dashboard-container {
+    height: 100vh;
+    width: 85%;
+    margin-left: 95px;
+}
+
+.sidebar {
+    background-color: #1F2028;
+    /* Darker shade for sidebar */
+    color: #E0E0E0;
+    /* Light text color */
+    width: 230px;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    /* Shadow for depth */
+}
+
+.logo img {
+    width: 100%;
+
+}
+
+.sidebar .logoname {
+    font-size: 24px;
+    font-weight: 600;
+    color: #E0E0E0;
+    /* Light text */
+    margin-left: 10px;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar li {
+    margin: 20px 0;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    /* Add padding for touch targets */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.sidebar li:hover {
+    background-color: #3B3D49;
+    /* Hover effect */
+    color: #ff7043;
+    /* Highlight color on hover */
+}
+
+.main-content {
+    margin-left: 118px;
+    /* Adjusted for full sidebar width */
+    padding: 40px;
+    background-color: #2B2D42;
+    /* Match the main theme */
+    overflow-y: auto;
+    width: calc(100% - 0px);
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.main-content h1 {
+    margin: 0;
+    color: #E0E0E0;
+    /* Light heading */
+}
+
+.card {
+    background-color: #3B3D49;
+    /* Slightly lighter than main background */
+    border: 1px solid #444;
+    /* Darker border */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Enhanced shadow */
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ff7043;
+    /* Accent color for card titles */
+}
+
+.card p {
+    color: #b0b0b0;
+    /* Lighter text color for paragraphs */
+    font-size: 16px;
+}
+
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.upload-section button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #ff7043;
+    /* Accent button color */
+    color: #ffffff;
+    /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.upload-section button:hover {
+    background-color: #e55b2d;
+    /* Darker shade on hover */
+}
+
+/* Overlay container for X-ray and heatmap */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.xray-image {
+    width: 100%;
+    height: 320px;
+    border-radius: 15px;
+}
+
+.heatmap-image {
+    width: 100%;
+    height: 320px;
+    opacity: 0.3;
+    /* Set heatmap opacity for overlay effect */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+/* Styling for scrollable content */
+.charts-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.charts-section .card {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar Buttons */
+.nav-button {
+    background-color: #ff7043;
+    /* Button background */
+    color: #ffffff;
+    /* Button text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.nav-button:hover {
+    background-color: #e55b2d;
+    /* Darker shade on hover */
+}
+
+.light-gray {
+    color: rgba(145, 145, 145, 0.379);
+}
+
+.white-text {
+    color: white;
+}
+
+.card p-3 {
+    font-family: 'Courier New', Courier, monospace;
+    /* Monospace for typing effect */
+    white-space: pre-wrap;
+    /* Ensure the formatting is preserved */
+}
+
+@media (max-width: 1040px) {
+    .sidebar {
+        background-color: #1F2028;
+        color: #E0E0E0;
+        width: 105px;
+        height: 100vh;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav li {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .logo img {
+        width: 150%;
+        margin-left: 0;
+        position: relative;
+        right: 10px;
+    }
+
+    .main-content {
+        margin-left: 80px;
+        /* Adjusted for full sidebar width */
+        padding: 40px;
+        background-color: #2B2D42;
+        /* Match the main theme */
+        overflow-y: auto;
+        width: calc(100% - 0px);
+        height: 100vh;
+        box-sizing: border-box;
+    }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 798px) {
+    .sidebar {
+        background-color: #1F2028;
+        color: #E0E0E0;
+        width: 125px;
+        height: 100vh;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav li {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .logo img {
+        width: 150%;
+        margin-left: 0;
+        position: relative;
+        right: 10px;
+    }
+
+    .main-content {
+        margin-left: 38px;
+        /* Adjusted for full sidebar width */
+        padding: 40px;
+        background-color: #2B2D42;
+        /* Match the main theme */
+        overflow-y: auto;
+        width: calc(100% - 0px);
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .charts-section .card {
+        margin-bottom: 20px;
+    }
+
+    .upload-section {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .upload-section button {
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 580px) {
+    .main-content {
+        margin-left: 18px;
+    }
+
+    .upload-section {
+        flex-direction: column;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .upload-section button {
+        width: 40%;
+        font-size: 14px;
+        font-weight: 600;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .custicon
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media (max-width: 480px) 
+{
+    
+    .main-content {
+        margin: 0;
+        position: relative;
+        right: 40px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        font-size: 14px;
+        /* Smaller font for mobile */
+    }
+
+    .charts-section .card {
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+
+
+    .upload-section input {
+        width: 100%;
+       
+    }
+    .upload-section button {
+        width: 60%;
+    }
+    .history-list {
+        max-height: 200px;
+        /* Limit height for scrolling */
+        overflow-y: auto;
+        /* Enable scrolling if necessary */
+    }
+}

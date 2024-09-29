@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    margin-right: 10px;
+  }
+  
+  .searchbox {
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+  
+  .searchbox input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .navitem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .account {
+    display: flex;
+    align-items: center;
+  }
+  
+  .account img {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .container-body {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+    overflow-y: auto;
+  }
+  
+  .upload-section {
+    margin-bottom: 20px;
+  }
+  
+  .file-input {
+    margin-right: 10px;
+  }
+  
+  .diagnose-button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .diagnose-button:hover {
+    background-color: #3498db;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .results-section {
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .heatmap-section {
+    text-align: center;
+  }
+  
+  .heatmap-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .charts {
+    margin-top: 20px;
+  }
+  
