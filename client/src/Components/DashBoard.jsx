@@ -16,10 +16,10 @@ const Dashboard = () => {
   const [xrayImage, setXrayImage] = useState(null);
   const [loading, setLoading] = useState(false);
   const [diagnosisHistory, setDiagnosisHistory] = useState({});
-  const [llmResponse, setLlmResponse] = useState(""); // State for LLM response
-  const [typedResponse, setTypedResponse] = useState(""); // State for typing animation
-  const [diagnosisStarted, setDiagnosisStarted] = useState(false); // State to track if diagnosis has started
-  const [typingIndex, setTypingIndex] = useState(0); // Index for typing effect
+  const [llmResponse, setLlmResponse] = useState(""); 
+  const [typedResponse, setTypedResponse] = useState("");
+  const [diagnosisStarted, setDiagnosisStarted] = useState(false); 
+  const [typingIndex, setTypingIndex] = useState(0); 
   const typingSpeed = 3;
 
   const handleFileUpload = (e) => {
