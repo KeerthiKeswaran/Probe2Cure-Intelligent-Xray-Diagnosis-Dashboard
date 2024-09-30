@@ -63,12 +63,12 @@ const Dashboard = () => {
     formData.append("file", selectedFile);
 
     try {
-      const response = await axios.post("http://localhost:8000/upload", formData, {
+      const response = await axios.post("http://relaxed-kitti-keerthikeswaran-bd61a544.koyeb.app/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
       setDiagnosisData(response.data);
-      setHeatmapImage(`data:image/png;base64,${response.data.heatmap}`);
+      //setHeatmapImage(`data:image/png;base64,${response.data.heatmap}`);
 
       const latestDiagnosis = response.data.prediction;
       const latestAccuracy = response.data.accuracy;
@@ -84,7 +84,7 @@ const Dashboard = () => {
       });
 
       try {
-        const response = await axios.post("http://localhost:8000/suggestion",
+        const response = await axios.post("http://relaxed-kitti-keerthikeswaran-bd61a544.koyeb.app/suggestion",
           {
             diagnose: latestDiagnosis,
             accuracy: String(latestAccuracy)
