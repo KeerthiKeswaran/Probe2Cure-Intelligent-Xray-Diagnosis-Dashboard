@@ -1,0 +1,9 @@
+fastapi
+pydantic
+uvicorn
+tensorflow
+numpy
+matplotlib
+langchain_core
+langchain_groq
+pillow
