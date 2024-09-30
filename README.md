@@ -1,4 +1,4 @@
-**#### Probe2Cure: Intelligent X-ray Diagnosis Dashboard**
+# Probe2Cure: Intelligent X-ray Diagnosis Dashboard
 
 ## Overview
 
