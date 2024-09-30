@@ -63,7 +63,9 @@ const Dashboard = () => {
     formData.append("file", selectedFile);
 
     try {
-      const response = await axios.post("http://relaxed-kitti-keerthikeswaran-bd61a544.koyeb.app/upload", formData, {
+      const response = await axios.post("http://relaxed-kitti-keerthikeswaran-bd61a544.koyeb.app/upload", formData,{
+        method : 'POST',
+
         headers: { "Content-Type": "multipart/form-data" },
       });
 
@@ -89,6 +91,7 @@ const Dashboard = () => {
             diagnose: latestDiagnosis,
             accuracy: String(latestAccuracy)
           }, {
+          method: 'POST',
           headers: { "Content-Type": "application/json" },
         });
         const text = preprocessText(response.data.results);
