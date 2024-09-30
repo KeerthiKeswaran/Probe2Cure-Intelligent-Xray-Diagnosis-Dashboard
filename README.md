@@ -8,8 +8,10 @@
 
 [Probe2Cure Dashboard](https://keerthikeswaran.github.io/Probe2Cure-Intelligent-Xray-Diagnosis-Dashboard/)
 
-https://github.com/user-attachments/assets/53eb5ac0-3065-4ec8-b489-12b65f9372e8
 ---
+
+https://github.com/user-attachments/assets/53eb5ac0-3065-4ec8-b489-12b65f9372e8
+
 
 ## Features
 
